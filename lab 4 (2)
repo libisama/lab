@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std; 
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    const float p(3.14);
+    float d, L;
+    cout << "Введите диаметр окружности." << endl;
+    cin >> d;
+    L = p * d;
+    cout << "Длина окружности равна " << L << "." << endl;
+
+    return 0;
+}
