@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std; 
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    float a, b, S, P;
+    cout << "Введите две стороны прямоугольника." << endl;
+    cin >> a;
+    cout << " ";
+    cin >> b;
+    S = a * b;
+    P = (a + b) * 2;
+    cout << "Площадь прямоугольника равна " << S << "." << endl;
+    cout << "Периметр прямоугольника равен " << P << "." << endl;
+
+}
