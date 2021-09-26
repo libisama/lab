@@ -1,6 +1,6 @@
 #include <iostream>
 
-using namespace std; 
+using namespace std;
 
 int main()
 {
@@ -8,10 +8,10 @@ int main()
     float a, b, sum, ras, pr, ch;
     cout << "Введите два ненулевых числа." << endl;
     cin >> a >> b;
-    sum = sqrt(a) + sqrt(b);
-    ras = sqrt(a) - sqrt(b);
-    pr = sqrt(a) * sqrt(b);
-    ch = sqrt(a) / sqrt(b);
+    sum = a*a + b*b;
+    ras = a*a - b*b;
+    pr = a*a * b*b;
+    ch = a*a / (b*b);
     cout << "Сумма квадратов чисел равна " << sum << "." << endl;
     cout << "Разность квадратов чисел равна " << ras << "." << endl;
     cout << "Произведение квадратов чисел равно " << pr << "." << endl;
