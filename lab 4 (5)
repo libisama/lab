@@ -8,14 +8,14 @@ int main()
     float a, b, sum, ras, pr, mod;
     cout << "Введите два ненулевых числа." << endl;
     cin >> a >> b;
-    sum = a + b;
-    ras = a - b;
-    pr = a * b;
+    sum = abs(a) + abs(b);
+    ras = abs(a) - abs(b);
+    pr = abs(a) * abs(b);
     mod = abs(a) / abs(b);
-    cout << "Сумма чисел равна " << sum << "." << endl;
-    cout << "Разность чисел равна " << ras << "." << endl;
-    cout << "Произведение чисел равно " << pr << "." << endl;
-    cout << "Частное модулей этих чисел равно " << mod << "." << endl;
+    cout << "Сумма модулей чисел равна " << sum << "." << endl;
+    cout << "Разность модулей чисел равна " << ras << "." << endl;
+    cout << "Произведение модулей чисел равно " << pr << "." << endl;
+    cout << "Частное модулей чисел равно " << mod << "." << endl;
 
     return 0;
 }
