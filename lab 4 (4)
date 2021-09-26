@@ -8,14 +8,14 @@ int main()
     float a, b, sum, ras, pr, ch;
     cout << "Введите два ненулевых числа." << endl;
     cin >> a >> b;
-    sum = a + b;
-    ras = a - b;
-    pr = a * b;
-    ch = (a * a) / (b * b);
-    cout << "Сумма чисел равна " << sum << "." << endl;
-    cout << "Разность чисел равна " << ras << "." << endl;
-    cout << "Произведение чисел равно " << pr << "." << endl;
-    cout << "Частное квадратов этих чисел равно " << ch << "." << endl;
+    sum = sqrt(a) + sqrt(b);
+    ras = sqrt(a) - sqrt(b);
+    pr = sqrt(a) * sqrt(b);
+    ch = sqrt(a) / sqrt(b);
+    cout << "Сумма квадратов чисел равна " << sum << "." << endl;
+    cout << "Разность квадратов чисел равна " << ras << "." << endl;
+    cout << "Произведение квадратов чисел равно " << pr << "." << endl;
+    cout << "Частное квадратов чисел равно " << ch << "." << endl;
 
     return 0;
 }
