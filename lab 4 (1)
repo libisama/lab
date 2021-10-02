@@ -7,9 +7,7 @@ int main()
     setlocale(LC_ALL, "Russian");
     float a, b, S, P;
     cout << "Введите две стороны прямоугольника." << endl;
-    cin >> a;
-    cout << " ";
-    cin >> b;
+    cin >> a >> b;
     S = a * b;
     P = (a + b) * 2;
     cout << "Площадь прямоугольника равна " << S << "." << endl;
