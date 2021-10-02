@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    float a, b, c, pr;
+    cout << "Введите координаты трех точек на числовой оси (точка С должна находиться между точками А и В)." << endl;
+    cout << "А = ";
+    cin >> a;
+    cout << "B = ";
+    cin >> b; 
+    cout << "C = ";
+    cin >> c; 
+    pr = abs(c - a) * abs(c - b);
+    cout << "Произведение длин отрезков AC и ВС равно " << pr << "." << endl;
+
+    return 0;
+}
