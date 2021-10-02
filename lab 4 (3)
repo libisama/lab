@@ -7,8 +7,7 @@ int main()
     setlocale(LC_ALL, "Russian");
     float a, b, sr;
     cout << "Введите два числа." << endl;
-    cin >> a;
-    cin >> b;
+    cin >> a >> b;
     sr = (a + b) / 2;
     cout << "Среднее арифметическое этих двух чисел равно " << sr << "." << endl;
 
