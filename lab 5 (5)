@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float p, s, x1, x2, x3, y1, y2, y3, a, b, c;
+	cout << "Введите координаты трех вершин треугольника." << endl;
+	cout << "x1 = ";
+	cin >> x1;
+	cout << "y1 = ";
+	cin >> y1;
+	cout << "x2 = ";
+	cin >> x2;
+	cout << "y2 = ";
+	cin >> y2;
+	cout << "x3 = ";
+	cin >> x3;
+	cout << "y3 = ";
+	cin >> y3;
+
+	a = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+	b = sqrt(pow(x3 - x2, 2) + pow(y3 - y2, 2));
+	c = sqrt(pow(x1 - x3, 2) + pow(y1 - y3, 2));
+	p = a + b + c;
+	s = sqrt((p / 2) * (p / 2 - a) * (p / 2 - b) * (p / 2 - c));
+
+	cout << "Периметр треугольника равен " << p << endl;
+	cout << "Площадь треугольника равна " << s << endl;
+	return 0;
+}
