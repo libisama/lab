@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a, b, c, d, g;
+
+	cout << "Введите три числа." << endl;
+	cout << "A = ";
+	cin >> a;
+	cout << "B = ";
+	cin >> b;
+	cout << "С = ";
+	cin >> c;
+	d = c;
+	c = a;
+	g = b;
+	b = d;
+	a = g;
+	cout << "A = " << a << endl;
+	cout << "B = " << b << endl;
+	cout << "C = " << c;
+
+	return 0;
+}
