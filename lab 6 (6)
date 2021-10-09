@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a, b;
+
+	cout << "Введите число А." << endl;
+	cin >> a;
+	b = a * a;
+	b = b * b;
+	b = b * b;
+	cout << b << endl;
+
+	return 0;
+}
