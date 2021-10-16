@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    float x, a, y, a1, ay;
+    cout << "Введите количество кг конфет (X)." << endl;
+    cin >> x;
+    cout << "Введите стоимость " << x << " кг конфет." << endl;
+    cin >> a;
+    cout << "Введите другое количество кг конфет (Y)." << endl;
+    cin >> y;
+    a1 = a / x;
+    ay = a1 * y;
+    cout << "1 кг конфет стоит " << a1 << " рублей." << endl;
+    cout << "Y кг конфет стоит " << ay << " рублей." << endl;
+    return 0;
+}
