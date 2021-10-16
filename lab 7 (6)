@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    float a1, a2, b1, b2, c1, c2, d, d1, d2, x, y;
+    cout << "Введите коэффициенты А1, A2, B1, B2, C1 и C2." << endl;
+    cin >> a1 >> a2 >> b1 >> b2 >> c1 >> c2;
+    d = a1 * b2 - a2 * b1;
+    d1 = c1 * b2 - b1 * c2;
+    d2 = a1 * c2 - a2 * c1;
+    x = d1 / d;
+    y = d2 / d;
+    cout << "X = " << x << endl;
+    cout << "Y = " << y << endl;
+    return 0;
+}
