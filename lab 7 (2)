@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    const float p(3.14);
+    float Ag, Ar;
+    cout << "Введите значение угла в радианах так, что 0 < a < 2*p." << endl;
+    cin >> Ar;
+    Ag = Ar / p * 180;
+    cout << "Значение этого угла в градусах равно " << Ag << "." << endl;
+
+    return 0;
+}
