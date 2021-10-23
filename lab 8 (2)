@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int b, a, c;
+    cout << "Введите два целых положительных числа." << endl;
+    cin >> a >> b;
+    c = a / b;
+    cout << "На отрезке длины " << a << " может быть размещено " << c << " отрезков/а длины " << b << "." << endl;
+    return 0;
+}
