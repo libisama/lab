@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int b, a, d;
+    float c;
+    cout << "Введите два целых положительных числа." << endl;
+    cin >> a >> b;
+    c = a / b;
+    d = a - c * b;
+    cout << "Длина незанятой части отрезка - " << d << "." << endl;
+    return 0;
+}
