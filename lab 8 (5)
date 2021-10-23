@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int a, b, a1, a2, a3;
+    cout << "Введите трехзначное число." << endl;
+    cin >> a;
+    a1 = a / 100;
+    a2 = (a - a1 * 100) / 10;
+    a3 = a - a1 * 100 - a2 * 10;
+    b = a2 * 100 + a3 * 10 + a1;;
+    cout << b << endl;
+    return 0;
+}
