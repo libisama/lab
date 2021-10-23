@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int b;
+    float a;
+    cout << "Введите размер файла в байтах." << endl;
+    cin >> a;
+    b = a / 1024;    
+    cout << "Размер файла в килобайтах равен " << b << "." << endl;
+    return 0;
+}
