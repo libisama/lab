@@ -5,11 +5,18 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    int b;
-    float a;
+    int a, c, d;
+    float b;
     cout << "Введите размер файла в байтах." << endl;
     cin >> a;
-    b = a / 1024;    
-    cout << "Размер файла в килобайтах равен " << b << "." << endl;
+    b = a / 1024;
+    d = a % 1024;
+    if (d != 0) {
+        c = b + 1;
+    }
+    else {
+        c = b;
+    }
+    cout << "Размер файла в килобайтах равен " << c << "." << endl;
     return 0;
 }
