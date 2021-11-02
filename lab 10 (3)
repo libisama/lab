@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int a, b, c;
+    cout << "Введите целое положительное число." << endl;
+    cin >> a;
+
+    b = a / 100;
+    c = a % 2;
+
+    if ((b==0) && (c==0)) { cout << "Высказывание 'Данное число является четным двузначным' истинно." << endl;
+}
+    else { cout << "Высказывание 'Данное число является четным двузначным' ложно." << endl; }
+
+    return 0;
+}
