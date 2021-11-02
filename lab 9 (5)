@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int n, n1, n2;
+    cout << "Введите год." << endl;
+    cin >> n;
+
+    n1 = n / 100;
+    n2 = n % 100;
+    if (n2 != 0) { n1++; }
+
+    cout << "Номер столетия - " << n1 << "." << endl;
+    return 0;
+}
