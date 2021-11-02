@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int a, b, c;
+    cout << "Введите три стороны треугольника (целые числа)." << endl;
+    cin >> a >> b >> c;
+
+    if ((a*a==b*b+c*c) || (b*b==a*a+c*c) || (c*c==a*a+b*b)) { cout << "Высказывание 'Треугольник со сторонами a, b, c является прямоугольным' истинно." << endl;
+}
+    else { cout << "Высказывание 'Треугольник со сторонами a, b, c является прямоугольным' ложно." << endl; }
+
+    return 0;
+}
