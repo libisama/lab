@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    float x, y;
+    cout << "Введите две координаты точки, не лежащей на координатных осях OX и OY." << endl;
+    cin >> x >> y;
+
+    if ((x > 0) && (y > 0)) { cout << "Точка расположена в 1-й четверти." << endl; }
+    if ((x < 0) && (y > 0)) { cout << "Точка расположена во 2-й четверти." << endl; }
+    if ((x < 0) && (y < 0)) { cout << "Точка расположена в 3-й четверти." << endl; }
+    if ((x > 0) && (y < 0)) { cout << "Точка расположена в 4-й четверти." << endl; }
+    
+    return 0;
+}
