@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int a;
+    cout << "Введите целое число." << endl;
+    cin >> a;
+
+    if (a == 0) { cout << "Это нулевое число." << endl; }
+    if ((a > 0) && (a % 2 == 0)) { cout << "Это положительное четное число." << endl; }
+    if ((a > 0) && (a % 2 != 0)) { cout << "Это положительное нечетное число." << endl; }
+    if ((a < 0) && (a % 2 == 0)) { cout << "Это отрицательное четное число." << endl; }
+    if ((a < 0) && (a % 2 != 0)) { cout << "Это отрицательное нечетное число." << endl; }
+    
+    return 0;
+}
