@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int a;
+    cout << "Введите год." << endl;
+    cin >> a;
+
+    switch (a % 1984 % 60 / 12)  {
+    case 0: cout << "год зелен"; break;
+    case 1: cout << "год красн"; break;
+    case 2: cout << "год желт"; break;
+    case 3: cout << "год бел"; break;
+    case 4: cout << "год черн"; break;
+    }
+
+    switch (a % 1984 % 60 % 12)  {
+    case 0: cout << "ой крысы"; break;
+    case 1: cout << "ой коровы"; break;
+    case 2: cout << "ого тигра"; break;
+    case 3: cout << "ого зайца"; break;
+    case 4: cout << "ого дракона"; break;
+    case 5: cout << "ой змеи"; break;
+    case 6: cout << "ой лошади"; break;
+    case 7: cout << "ой овцы"; break;
+    case 8: cout << "ой обезьяны"; break;
+    case 9: cout << "ой курицы"; break;
+    case 10: cout << "ой собаки"; break;
+    case 11: cout << "ой овцы"; break;
+    }
+    return 0;
+}
