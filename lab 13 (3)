@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int n, i;
+    float s(0), a(1.1);
+    cout << "Введите целое положительное число." << endl;
+    cin >> n;
+
+    for (i = 1; i < 2 * n; i = i + 2) {
+        s = s + i;
+        cout << s << endl;
+    }
+
+    cout << "Квадрат этого числа равен " << s << "." << endl;
+    return 0;
+}
