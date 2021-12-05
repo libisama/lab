@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int n, i;
+    float s(1), a;
+    cout << "Введите вещественное число и целое положительное число." << endl;
+    cin >> a >> n;
+
+    for (i = 1; i < n + 1; i++) {
+        if (i%2==0) {s = s + pow (a, i);} else { s = s - pow(a, i); }
+    }
+
+    cout << "Значение выражения равно " << s << "." << endl;
+    return 0;
+}
