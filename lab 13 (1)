@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    float a, i, b;
+    cout << "Введите ценy 1 кг конфет (вещественное число)." << endl;
+    cin >> a;
+
+    for (i = 0.1; i < 1.1; i = i + 0.1) {
+        b = a * i;
+        cout << "Стоимость " << i << " кг конфет - "<< b << "." << endl;
+    }
+
+    return 0;
+}
