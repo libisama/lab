@@ -1,0 +1,93 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    {
+        setlocale(LC_ALL, "Russian");
+        int a, b;
+        cout << "Введите два целых положительных числа A и B (A < B)." << endl;
+        cin >> a >> b;
+
+        for (int i = a; i <= b; i++) {
+            for (int j = 1; j <= i; j++) {
+                cout << i << " ";
+            }
+            cout << " " << endl;
+        } cout << " " << endl; }
+
+    {
+            setlocale(LC_ALL, "Russian");
+            float a, b;
+            cout << "Введите два положительных числа A и B (A > B)." << endl;
+            cin >> a >> b;
+
+            while (a >= b) {
+                a = a - b;
+            }
+
+            cout << "Длина незанятой части отрезка A - " << a << " ." << endl;
+            cout << " " << endl; }
+
+    {
+        setlocale(LC_ALL, "Russian");
+        int n, k(0), s(0);
+        cout << "Введите целое число N (> 1)." << endl;
+        cin >> n;
+
+        while (s < n) {
+            k++;
+            s = s + k;
+        }
+
+        cout << "Число К равно " << k << " ." << endl;
+        cout << " " << endl; }
+
+    {
+        setlocale(LC_ALL, "Russian");
+        int k(0);
+        float p, s(1000);
+        cout << "Введите количество процентов P (P — вещественное число, 0 < P < 25)." << endl;
+        cin >> p;
+
+        while (s < 1100) {
+            k++;
+            s = s + s * (p / 100);
+        }
+
+        cout << "Количество месяцев равно " << k << " ." << endl;
+        cout << "Итоговый развер вклада равен " << s << " ." << endl;
+        cout << " " << endl; }
+
+    {
+        setlocale(LC_ALL, "Russian");
+        int a, b;
+        cout << "Введите два целых положительных числа A и B." << endl;
+        cin >> a >> b;
+
+        while (a != b) {
+            if (a > b) { a = a - b; }
+            else { b = b - a; }
+        }
+
+        cout << "НОД равен " << a << " ." << endl;
+        cout << " " << endl; }
+
+    {
+        setlocale(LC_ALL, "Russian");
+        int n, n1(1), n2(1), k(2), s(0);
+        cout << "Введите целое число N (> 1), являющееся числом Фибоначчи." << endl;
+        cin >> n;
+
+        while (s != n) {
+            k++;
+            s = n1 + n2;
+            n1 = n2;
+            n2 = s;
+        }
+
+        cout << "Порядковый номер числа Фибоначчи N равен " << k << " ." << endl;
+        cout << " " << endl; }
+    return 0;
+}
