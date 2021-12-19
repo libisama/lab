@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    float a, b;
+    cout << "Введите два положительных числа A и B (A > B)." << endl;
+    cin >> a >> b;
+
+    while (a >= b) {
+        a = a - b;
+    }
+
+    cout << "Длина незанятой части отрезка A - " << a << " ." << endl;
+    return 0;
+}
