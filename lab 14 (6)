@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int n, n1(1), n2(1), k(2), s(0);
+    cout << "Введите целое число N (> 1), являющееся числом Фибоначчи." << endl;
+    cin >> n;
+
+    while (s != n) {
+        k++;
+        s = n1 + n2;
+        n1 = n2;
+        n2 = s;
+    }
+
+    cout << "Порядковый номер числа Фибоначчи N равен " << k << " ." << endl;
+    return 0;
+}
