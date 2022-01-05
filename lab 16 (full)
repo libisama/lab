@@ -1,0 +1,107 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    {
+        setlocale(LC_ALL, "Russian");
+
+        int n;
+        cout << "Введите размер массива." << endl;
+        cin >> n;
+        int* mas = new int[n];
+        for (int i = 0; i < n; i++) {
+            mas[i] = (i * 2) + 1;
+            cout << mas[i] << " ";
+
+        } 
+        cout << " " << endl;
+        cout << " " << endl; }
+
+    {
+    setlocale(LC_ALL, "Russian");
+
+    int n;
+    float a, d;
+    cout << "Введите размер массива (>1), первый член и знаменатель геометрической прогрессии." << endl;
+    cin >> n >> a >> d;
+    int* mas = new int[n];
+    mas[0] = a;
+    cout << mas[0] << " ";
+    for (int i = 1; i < n; i++) {
+        mas[i] = mas[i - 1] * d;
+        cout << mas[i] << " ";
+
+    } 
+        cout << " " << endl;
+        cout << " " << endl; }
+
+    {
+    setlocale(LC_ALL, "Russian");
+
+    int n, a, b, sum(0);
+    cout << "Введите размер массива (>2) и два целых числа." << endl;
+    cin >> n >> a >> b;
+    int* mas = new int[n];
+    mas[0] = a;
+    cout << mas[0] << " ";
+    mas[1] = b;
+    cout << mas[1] << " ";
+    sum = mas[0] + mas[1];
+    for (int i = 2; i < n; i++) {
+        mas[i] = sum;
+        sum = sum + mas[i];
+        cout << mas[i] << " ";
+
+    } 
+        cout << " " << endl;
+        cout << " " << endl; }
+
+    {
+        setlocale(LC_ALL, "Russian");
+
+        int n;
+        cout << "Введите размер массива." << endl;
+        cin >> n;
+        int* mas = new int[n];
+        cout << "Введите элементы массива." << endl;
+        for (int j = 0; j < n; j++) {
+            cin >> mas[j];
+        }
+
+        if (n % 2 == 0) {
+            for (int i = 0; i <= n / 2 - 1; i++) {
+                cout << mas[i] << " ";
+                cout << mas[n - 1 - i] << " ";
+            }
+        }
+        if (n % 2 != 0) {
+            for (int i = 0; i <= n / 2; i++) {
+                cout << mas[i] << " ";
+                if (i != n / 2) cout << mas[n - 1 - i] << " ";
+            }
+
+        }
+        cout << " " << endl;
+        cout << " " << endl; }
+
+    {
+        setlocale(LC_ALL, "Russian");
+
+        int n;
+        cout << "Введите размер массива." << endl;
+        cin >> n;
+        int* mas = new int[n];
+        cout << "Введите элементы массива." << endl;
+        for (int j = 0; j < n; j++) {
+            cin >> mas[j];
+        }
+
+        for (int i = 1; i < n; i += 2) { cout << mas[i] << " "; }
+        for (int i = 0; i < n; i += 2) { cout << mas[i] << " "; }
+        cout << " " << endl;
+        cout << " " << endl; }
+
+    return 0;
+}
