@@ -1,0 +1,97 @@
+#include <iostream>
+
+using namespace std;
+
+void PowerA3(float A, float& B)
+{
+    B = A * A * A;
+}
+
+int Sign(float X)
+{
+    if (X < 0) X = -1;
+    if (X == 0) X = 0;
+    if (X > 0) X = 1;
+    return X;
+}
+
+float RingS(float R1, float R2)
+{
+    float S = 3.14 * (R1 * R1 - R2 * R2);
+    return S;
+}
+
+int Quarter(float X, float Y)
+{
+    int q;
+    if ((X > 0) && (Y > 0)) q = 1;
+    if ((X < 0) && (Y > 0)) q = 2;
+    if ((X < 0) && (Y < 0)) q = 3;
+    if ((X > 0) && (Y < 0)) q = 4;
+    return q;
+}
+
+float Fact2(int N)
+{
+    int f(1);
+    if (N % 2 == 1) {
+        for (int j = 1; j <= N; j = j + 2) { f = f * j; }
+    }
+    if (N % 2 == 0) {
+        for (int j = 2; j <= N; j = j + 2) { f = f * j; }
+    }
+    return f;
+}
+
+int main()
+{
+    {
+        setlocale(LC_ALL, "Russian");
+        float c;
+        for (int i = 1; i < 6; i++) {
+            cout << "Введите число, которое нужно возвести в степень." << endl;
+            cin >> c;
+            PowerA3(c, c);
+            cout << "Третья степень данного числа - " << c << "." << endl;
+        }
+        cout << " " << endl; }
+
+    {
+        setlocale(LC_ALL, "Russian");
+        float A, B;
+        cout << "Введите два вещественных числа." << endl;
+        cin >> A >> B;
+        cout << "Значение данного выражения - " << Sign(A) + Sign(B) << endl;
+        cout << " " << endl; }
+
+    {
+        setlocale(LC_ALL, "Russian");
+        float r1, r2;
+        for (int i = 1; i < 4; i++) {
+            cout << "Введите два радиуса окружностей (R1 > R2)." << endl;
+            cin >> r1 >> r2;
+            cout << "Площадь кольца равна " << RingS(r1, r2) << "." << endl;
+        }
+        cout << " " << endl; }
+
+    {
+        setlocale(LC_ALL, "Russian");
+        float x, y;
+        for (int i = 1; i < 4; i++) {
+            cout << "Введите две ненулевые кооринаты точки." << endl;
+            cin >> x >> y;
+            cout << "Данная точка находится в " << Quarter(x, y) << " четверти." << endl;
+        }
+        cout << " " << endl; }
+
+    {
+        setlocale(LC_ALL, "Russian");
+        int n;
+        float F;
+        cout << "Введите целое число." << endl;
+        cin >> n;
+        cout << "Двойной факториал этого числа равен " << Fact2(n) << "." << endl;
+        cout << " " << endl; }
+
+    return 0;
+}
