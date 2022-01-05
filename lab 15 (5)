@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+float Fact2(int N)
+{
+    int f(1);
+    if (N % 2 == 1) {
+        for (int j = 1; j <= N; j = j + 2) { f = f * j; }
+    }
+    if (N % 2 == 0) {
+        for (int j = 2; j <= N; j = j + 2) { f = f * j; }
+    }
+    return f;
+}
+
+int main()
+{
+    {
+        setlocale(LC_ALL, "Russian");
+        int n;
+        float F;
+            cout << "Введите целое число." << endl;
+            cin >> n;
+            cout << "Двойной факториал этого числа равен " << Fact2(n) << "." << endl;
+    }
+
+    return 0;
+}
