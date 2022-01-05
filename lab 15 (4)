@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+int Quarter(float X, float Y)
+{
+    int q;
+    if ((X > 0) && (Y > 0)) q=1;
+    if ((X < 0) && (Y > 0)) q=2;
+    if ((X < 0) && (Y < 0)) q=3;
+    if ((X > 0) && (Y < 0)) q=4;
+    return q;
+}
+
+int main()
+{
+    {
+        setlocale(LC_ALL, "Russian");
+        float x, y;
+        for (int i = 1; i < 4; i++) {
+            cout << "Введите две ненулевые кооринаты точки." << endl;
+            cin >> x >> y;
+            cout << "Данная точка находится в " << Quarter(x, y) << " четверти." << endl;
+        }
+    }
+
+    return 0;
+}
