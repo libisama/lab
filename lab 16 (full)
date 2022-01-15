@@ -15,46 +15,46 @@ int main()
             mas[i] = (i * 2) + 1;
             cout << mas[i] << " ";
 
-        } 
+        }
         cout << " " << endl;
         cout << " " << endl; }
 
     {
-    setlocale(LC_ALL, "Russian");
+        setlocale(LC_ALL, "Russian");
 
-    int n;
-    float a, d;
-    cout << "Введите размер массива (>1), первый член и знаменатель геометрической прогрессии." << endl;
-    cin >> n >> a >> d;
-    int* mas = new int[n];
-    mas[0] = a;
-    cout << mas[0] << " ";
-    for (int i = 1; i < n; i++) {
-        mas[i] = mas[i - 1] * d;
-        cout << mas[i] << " ";
+        int n;
+        float a, d;
+        cout << "Введите размер массива (>1), первый член и знаменатель геометрической прогрессии." << endl;
+        cin >> n >> a >> d;
+        float* mas = new float[n];
+        mas[0] = a;
+        cout << mas[0] << " ";
+        for (int i = 1; i < n; i++) {
+            mas[i] = mas[i - 1] * d;
+            cout << mas[i] << " ";
 
-    } 
+        }
         cout << " " << endl;
         cout << " " << endl; }
 
     {
-    setlocale(LC_ALL, "Russian");
+        setlocale(LC_ALL, "Russian");
 
-    int n, a, b, sum(0);
-    cout << "Введите размер массива (>2) и два целых числа." << endl;
-    cin >> n >> a >> b;
-    int* mas = new int[n];
-    mas[0] = a;
-    cout << mas[0] << " ";
-    mas[1] = b;
-    cout << mas[1] << " ";
-    sum = mas[0] + mas[1];
-    for (int i = 2; i < n; i++) {
-        mas[i] = sum;
-        sum = sum + mas[i];
-        cout << mas[i] << " ";
+        int n, a, b, sum(0);
+        cout << "Введите размер массива (>2) и два целых числа." << endl;
+        cin >> n >> a >> b;
+        int* mas = new int[n];
+        mas[0] = a;
+        cout << mas[0] << " ";
+        mas[1] = b;
+        cout << mas[1] << " ";
+        sum = mas[0] + mas[1];
+        for (int i = 2; i < n; i++) {
+            mas[i] = sum;
+            sum = sum + mas[i];
+            cout << mas[i] << " ";
 
-    } 
+        }
         cout << " " << endl;
         cout << " " << endl; }
 
